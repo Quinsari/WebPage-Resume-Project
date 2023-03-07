@@ -4,8 +4,8 @@ h1 {
     border: 5px double black;
     width: 100%;
     padding: 1% 0% 1% 0%;
-    /*animation: slidein 0.5s ease-out 0s forwards;
-    visibility: hidden;*/
+    animation: slidein 0.5s ease-out 0s forwards;
+    visibility: hidden;
     z-index: 2;
     left: -5px;
     position: relative;
@@ -21,15 +21,7 @@ h1 {
 h1:active {
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: transparent;
-    animation: scrolling 2s linear 0s infinite;
 }
-
-@keyframes scrolling {
-    0%{background:linear-gradient(to right, black, 10%, white, 93%, black);}
-    50%{background:linear-gradient(to right, white, 10%, black, 93%, white);}
-    100%{background:linear-gradient(to right, black, 10%, white, 93%, black);}
-}
-
 
 #topper {
     border: 0px solid black;
