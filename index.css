@@ -4,7 +4,7 @@ h1 {
     border: 5px double black;
     width: 100%;
     padding: 1% 0% 1% 0%;
-    animation: slidein 0.5s ease-out 0s forwards;
+    animation: slidein 1.5s ease-out 0s forwards;
     visibility: hidden;
     z-index: 2;
     left: -5px;
@@ -13,14 +13,22 @@ h1 {
     color: black;
 }
 
+#look{
+    position:relative;
+    animation: lookatme 0.8s linear 3s forwards 2;
+}
+
+@keyframes lookatme{
+    0%{transform:translate(0%);}
+    25%{transform:translate(2%);}
+    75%{transform:translate(-2%);}
+    100%{transform:translate(0%);}
+
+}
+
 @keyframes slidein {
     0% {transform: translate(-100%); visibility: hidden;}
     100% {transform: translate(0%); visibility: visible;}
-}
-
-h1:active {
-    -webkit-text-stroke: 1px;
-    -webkit-text-fill-color: transparent;
 }
 
 #topper {
@@ -95,12 +103,6 @@ a {
 }
 
 
-a:active {
-    color: black;
-    -webkit-text-stroke: 1px;
-    -webkit-text-fill-color: transparent;
-}
-
 #projects{
     display: none;
     position: absolute;
@@ -121,4 +123,12 @@ td{
 tr {
     border: 1px solid black;
     width: 100%;
+}
+
+#lights{
+    position: absolute;
+    left: 1%;
+    top: 3%;
+    border-radius: 2px;
+    border: 2px solid white;
 }

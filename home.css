@@ -94,3 +94,11 @@ tr {
     border: 1px solid black;
     width: 100%;
 }
+
+#lights{
+    position: absolute;
+    left: 1%;
+    top: 3%;
+    border-radius: 2px;
+    border: 2px solid white;
+}
