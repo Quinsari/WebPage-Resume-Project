@@ -11,6 +11,10 @@ h1 {
     color: black;
 }
 
+#reroll{
+    cursor: default;
+}
+
 
 #topper {
     border: 0px solid black;

@@ -18,6 +18,10 @@ h1 {
     animation: lookatme 0.8s linear 3s forwards 2;
 }
 
+#reroll{
+    cursor: default;
+}
+
 @keyframes lookatme{
     0%{transform:translate(0%);}
     25%{transform:translate(2%);}

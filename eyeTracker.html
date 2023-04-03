@@ -11,14 +11,27 @@
             <div id="circle"></div>
            <div id="twocirc"></div>
            <a href="home.html"><button id="lights">Take me home!</button></a>
-           <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4"><button id="roll">Click Me!</button></a>
+           <a href="https://www.youtube.com/watch?v=mx86-rTclzA"><button id="roll">Click Me!</button></a>
            <button id="backon" onclick="lightswitch()">Turn them back on!</button>
+           <div id="bighead"></div>
+           <img id="smile" src="smile-17315.png" width="15%" alt="smile">
 
            <div id="text">Test</div>
           </body>
 
     </head>
     <style>
+        #smile{
+            position:absolute;
+            left: 50%;
+            top: 73%;
+            background-color: black;
+            transform:translate(-50%,-50%);
+            visibility: hidden;
+            border-radius:40%;
+            z-index: 1;
+        }
+
         #backon{
             position: absolute;
             left: 150px;
@@ -41,6 +54,7 @@
             top: 5%;
             border-radius: 2px;
             border: 2px solid white;
+            z-index: 2;
         }
 
         #text{
@@ -51,12 +65,27 @@
             background-color: black;
             font-size: larger;
             white-space: pre-wrap;
+            visibility: hidden;
         }
+
         body{
             margin:0;
             padding:0;
             overflow:hidden;
             background-color:black;
+        }
+
+        #bighead{
+            position:absolute;
+            left: 50%;
+            top: 65%;
+            transform:translate(-50%,-50%);
+            height:450px;
+            width:450px;
+            background-color: black;
+            border-radius:49%;
+            border:2px solid black;
+            z-index: 1;
         }
         #circle{
             position:absolute;
@@ -68,11 +97,14 @@
             background-color: black;
             border-radius:50%;
             border:2px solid black;
+            z-index: 2;
            /* animation : 2s pulsate infinite; */
         }
+
         @keyframes pulsate {
             50%{ border: 5px solid red;}
         }
+
         #twocirc{
             position:absolute;
             left: 56.5%;
@@ -83,8 +115,10 @@
             background-color: black;
             border-radius:50%;
             border:2px solid black;
+            z-index: 2;
            /* animation : 2s pulsate infinite; */
         }
+
         #main{
             transform: translate(-50%, -50%);
             position:absolute;
@@ -93,9 +127,11 @@
             display: block;
             width: fit-content;
             margin: auto;
+            z-index: 2;
             /* border: 2px solid black; */
 
         }
+
         #left{
             display:inline-block;
             height:250px;
@@ -104,6 +140,7 @@
             border:2px solid black;
             background: white;
         }
+
         #right{
             display:inline-block;
             height:250px;
@@ -189,6 +226,15 @@ function clickIt(){
             clicker.style.left = 50 + "%";
             clicker.style.top = 70 + "%";
             break;
+        case 6:
+            clicker.style.left = 55 + "%";
+            break;
+        case 7:
+            clicker.style.top = 30 + "%";
+            break;
+        case 8:
+            clicker.style.left = 35 + "%";
+            break;
         default:
             clicker.style.left = 1 + "%";
             clicker.style.top = 5 + "%";
@@ -202,10 +248,14 @@ function lightswitch(){
     if(!onOff){
         document.body.style.backgroundColor = "white";
         onOff = true;
+        smile.style.visibility = "visible";
+        backon.textContent = "BACK OFF!"
     }
     else{
         document.body.style.backgroundColor = "black";
         onOff = false;
+        smile.style.visibility = "hidden";
+        backon.textContent = "Turn them back on!"
     }
 
 }
