@@ -46,6 +46,9 @@ table{
 
 #ipsum {
     z-index: 1;
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 3%;
 }
 
 th{
@@ -106,3 +109,11 @@ tr {
     border-radius: 2px;
     border: 2px solid white;
 }
+
+footer {
+    background-color: #FFF;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    }
