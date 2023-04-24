@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="contact.css">
 <meta charset =" utf-8">
 <title> My Resume </title>
 <body>
@@ -20,9 +21,38 @@
     </nav>
 </div>
 
-<div style="width: 100%; text-align: center;"><a href="https://github.com/Quinsari"><img style="width: 5%;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></a></div>
+
+<form name="contactSignup" onsubmit="validateForm()" method="post" id="formField">
+    <div class="formpiece">
+        <label for="uName">Name </label><br/>
+        <input type="text" name="uName">
+    </div>
+    <div class="formpiece">
+        <label for="phone">Number </label><br/>
+        <input type="number" name="phone">
+    </div>
+    <div class="formpiece">
+        <label for="company">Company </label><br/>
+        <input type="text" name="company">
+    </div>
+    <div class="formpiece">
+        <label for="offer">Salary Offer </label><br/>
+        <input type="number" name="offer">
+    </div>
+    <div class="formpiece">
+        <label for="bribe">Bribe Offer </label><br/>
+        <input type="number" name="bribe">
+    </div>
+        <input type="submit" value="Hire Me">
+    <div id="errors"></div>
+</form>
+
+
+
+
 </body>
 <footer>
+    <div style="width: 100%; text-align: center;"><a href="https://github.com/Quinsari"><img style="width: 5%;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></a></div>
     <div>SEND ME MONEY AND STUFF YOU KNOW YOU WANT TO</div>
 </footer>
 <script>
