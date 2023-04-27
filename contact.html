@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="contact.css">
-<link rel="script" href="contact.js">
+<script src="contact.js"></script>
 <meta charset =" utf-8">
 <title> My Resume </title>
 <body>
@@ -15,7 +15,6 @@
                 <th><a href="skills.html">Skills</a></th>
                 <th><a href="projects.html">Projects</a></th>
                 <th><a href="work.html">Work</a></th>
-                <th><a href="about.html">About Me</a></th>
                 <th><a href="contact.html">Contact Me</a></th>
             </tr>
         </table>
@@ -44,8 +43,11 @@
         <label for="bribe">Bribe Offer </label><br/>
         <input type="number" name="bribe">
     </div>
-        <input type="submit" value="Hire Me">
-    <div id="errors"></div>
+    <div id="errors" style="visibility: hidden; color: red;">Null</div>
+    <div>
+        <input type="submit" value="Hire Me" id="hire">
+    </div>
+
 </form>
 
 
